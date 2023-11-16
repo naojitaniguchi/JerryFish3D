@@ -241,6 +241,7 @@ GameObject:
   - component: {fileID: 254511383}
   - component: {fileID: 254511382}
   - component: {fileID: 254511381}
+  - component: {fileID: 254511385}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -289,7 +290,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d97303c9fd6cd684ba58f991bd83010a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -331,9 +332,25 @@ Transform:
   m_LocalPosition: {x: 2.62, y: 1.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1650891267}
   m_Father: {fileID: 1435721054}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &254511385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254511380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f109983f69bb64081434aff5fd35a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dirPosition: {fileID: 1650891267}
+  targetTag: JerryFish
+  force: 500
 --- !u!1 &327025388
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +471,7 @@ GameObject:
   - component: {fileID: 395132527}
   - component: {fileID: 395132526}
   - component: {fileID: 395132525}
+  - component: {fileID: 395132532}
   m_Layer: 0
   m_Name: JerryFish2
   m_TagString: JerryFish
@@ -616,6 +634,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &395132532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395132524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3a5793edfbc36645a8d9709047e5409, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpPower: 900
 --- !u!1 &577761910
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,6 +861,7 @@ GameObject:
   - component: {fileID: 709340016}
   - component: {fileID: 709340015}
   - component: {fileID: 709340021}
+  - component: {fileID: 709340022}
   m_Layer: 0
   m_Name: JerryFish0
   m_TagString: JerryFish
@@ -992,6 +1024,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
+--- !u!114 &709340022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709340014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3a5793edfbc36645a8d9709047e5409, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpPower: 300
 --- !u!1 &947007735
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,6 +1558,7 @@ GameObject:
   - component: {fileID: 1610237652}
   - component: {fileID: 1610237651}
   - component: {fileID: 1610237650}
+  - component: {fileID: 1610237657}
   m_Layer: 0
   m_Name: JerryFish1
   m_TagString: JerryFish
@@ -1674,6 +1720,50 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1610237657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610237649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3a5793edfbc36645a8d9709047e5409, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpPower: 600
+--- !u!1 &1650891266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1650891267}
+  m_Layer: 0
+  m_Name: ForceDir
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1650891267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650891266}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.06, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 254511384}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1738547523
 GameObject:

@@ -33,7 +33,15 @@ public class JerryFishClicker : MonoBehaviour
                     dir.z = 0.0f;
                     if ( clickedGameObject.GetComponent<Rigidbody>() != null )
                     {
-                        clickedGameObject.GetComponent<Rigidbody>().AddForce(dir * jumpPower);
+                        if ( clickedGameObject.GetComponent<JerryFishParameter>() != null )
+                        {
+                            clickedGameObject.GetComponent<Rigidbody>().AddForce(dir * clickedGameObject.GetComponent<JerryFishParameter>().jumpPower);
+                        }
+                        else
+                        {
+                            clickedGameObject.GetComponent<Rigidbody>().AddForce(dir * jumpPower);
+                        }
+                        
                     }
                 }
             }
