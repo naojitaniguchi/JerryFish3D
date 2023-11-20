@@ -6,6 +6,7 @@ public class JerryFishParameter : MonoBehaviour
 {
     // Start is called before the first frame update
     public float jumpPower = 500.0f;
+    public int life = 1;
 
     void Start()
     {

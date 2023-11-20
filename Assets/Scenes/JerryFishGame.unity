@@ -468,7 +468,6 @@ GameObject:
   - component: {fileID: 395132530}
   - component: {fileID: 395132529}
   - component: {fileID: 395132528}
-  - component: {fileID: 395132527}
   - component: {fileID: 395132526}
   - component: {fileID: 395132525}
   - component: {fileID: 395132532}
@@ -523,7 +522,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 395132527}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: JerryFishPlayer, Assembly-CSharp
           m_MethodName: onClick
           m_Mode: 1
@@ -535,19 +534,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &395132527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 395132524}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2529f0600bd144247bebae18ef72dfeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpPower: 500
 --- !u!135 &395132528
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -647,6 +633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpPower: 900
+  life: 1
 --- !u!1 &577761910
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,7 +845,6 @@ GameObject:
   - component: {fileID: 709340019}
   - component: {fileID: 709340018}
   - component: {fileID: 709340017}
-  - component: {fileID: 709340016}
   - component: {fileID: 709340015}
   - component: {fileID: 709340021}
   - component: {fileID: 709340022}
@@ -886,7 +872,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 709340016}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: JerryFishPlayer, Assembly-CSharp
           m_MethodName: onClick
           m_Mode: 1
@@ -898,19 +884,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &709340016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 709340014}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2529f0600bd144247bebae18ef72dfeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpPower: 500
 --- !u!135 &709340017
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1037,6 +1010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpPower: 300
+  life: 1
 --- !u!1 &947007735
 GameObject:
   m_ObjectHideFlags: 0
@@ -1234,8 +1208,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1023666890}
-  - {fileID: 947007736}
   - {fileID: 1199702544}
+  - {fileID: 947007736}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &963194230
@@ -1541,6 +1515,7 @@ Transform:
   - {fileID: 254511384}
   - {fileID: 327025392}
   - {fileID: 1738547527}
+  - {fileID: 1968403833}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1610237649
@@ -1555,7 +1530,6 @@ GameObject:
   - component: {fileID: 1610237655}
   - component: {fileID: 1610237654}
   - component: {fileID: 1610237653}
-  - component: {fileID: 1610237652}
   - component: {fileID: 1610237651}
   - component: {fileID: 1610237650}
   - component: {fileID: 1610237657}
@@ -1610,7 +1584,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1610237652}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: JerryFishPlayer, Assembly-CSharp
           m_MethodName: onClick
           m_Mode: 1
@@ -1622,19 +1596,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1610237652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610237649}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2529f0600bd144247bebae18ef72dfeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpPower: 500
 --- !u!135 &1610237653
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1734,6 +1695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpPower: 600
+  life: 1
 --- !u!1 &1650891266
 GameObject:
   m_ObjectHideFlags: 0
@@ -1870,6 +1832,126 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1435721054}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1968403832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1968403833}
+  - component: {fileID: 1968403836}
+  - component: {fileID: 1968403835}
+  - component: {fileID: 1968403834}
+  - component: {fileID: 1968403837}
+  m_Layer: 0
+  m_Name: CubeEnemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1968403833
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968403832}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.97, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1435721054}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1968403834
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968403832}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1968403835
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968403832}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b7f5a7e7279f57345b21a29d32ac2ab7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1968403836
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968403832}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1968403837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968403832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293dba137bfd2c24594a1aaf8be63bed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: JerryFish
+  jerryFishDestroyEffect: {fileID: 4054818561478437847, guid: 682f296c838ffd747aa62f47b80df7a3, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
