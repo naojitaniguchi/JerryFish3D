@@ -43,6 +43,7 @@ public class JerryFishManager : MonoBehaviour
         {
             // show dialog
             contineDialogObject.SetActive(true);
+            Destroy(gameObject);
         }
     }
 }
