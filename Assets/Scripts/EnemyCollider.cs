@@ -38,6 +38,9 @@ public class EnemyCollider : MonoBehaviour
                     }
 
                     Destroy(collision.gameObject);
+
+                    JerryFishManager.instance.checkJerryfishCount();
+
                 }
             }
         }
