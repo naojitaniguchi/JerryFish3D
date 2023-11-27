@@ -43,6 +43,11 @@ public class JerryFishClicker : MonoBehaviour
                         }
                         
                     }
+                    // Animation Trigger‚ðˆø‚­
+                    if (clickedGameObject.GetComponent<Animator>() != null)
+                    {
+                        clickedGameObject.GetComponent<Animator>().SetTrigger("Clicked");
+                    }
                 }
             }
         }

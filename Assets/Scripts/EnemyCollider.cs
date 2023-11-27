@@ -37,9 +37,16 @@ public class EnemyCollider : MonoBehaviour
                         effect.transform.rotation = Quaternion.identity;
                     }
 
-                    Destroy(collision.gameObject);
+                    // Animation‚ÌTrigger‚ðˆø‚­
+                    if (collision.gameObject.GetComponent<Animator>() != null)
+                    {
+                        collision.gameObject.GetComponent<Animator>().SetTrigger("Die");
+                    }
 
-                    JerryFishManager.instance.checkJerryfishCount();
+                    // Destroy(collision.gameObject);
+
+                    
+                    //JerryFishManager.instance.checkJerryfishCount();
 
                 }
             }
