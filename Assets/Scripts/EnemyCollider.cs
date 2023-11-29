@@ -6,6 +6,7 @@ public class EnemyCollider : MonoBehaviour
 {
     [SerializeField] string targetTag = "JerryFish";
     [SerializeField] GameObject jerryFishDestroyEffect;
+    [SerializeField] AudioClip dieSound;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,13 @@ public class EnemyCollider : MonoBehaviour
                     if (collision.gameObject.GetComponent<Animator>() != null)
                     {
                         collision.gameObject.GetComponent<Animator>().SetTrigger("Die");
+                        if ( dieSound != null)
+                        {
+                            if (collision.gameObject.GetComponent<AudioSource>() != null)
+                            {
+                                collision.gameObject.GetComponent<AudioSource>().PlayOneShot(dieSound);
+                            }
+                        }
                     }
 
                     // Destroy(collision.gameObject);

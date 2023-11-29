@@ -6,6 +6,7 @@ public class JerryFishClicker : MonoBehaviour
 {
     [SerializeField] float jumpPower = 10.0f;
     [SerializeField] string targetTag = "JerryFish";
+    [SerializeField] AudioClip clickSound;
     GameObject clickedGameObject;
 
     // Start is called before the first frame update
@@ -47,6 +48,14 @@ public class JerryFishClicker : MonoBehaviour
                     if (clickedGameObject.GetComponent<Animator>() != null)
                     {
                         clickedGameObject.GetComponent<Animator>().SetTrigger("Clicked");
+
+                        if (clickSound != null)
+                        {
+                            if (clickedGameObject.GetComponent<AudioSource>() != null)
+                            {
+                                clickedGameObject.GetComponent<AudioSource>().PlayOneShot(clickSound);
+                            }
+                        }
                     }
                 }
             }
