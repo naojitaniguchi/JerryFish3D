@@ -31,6 +31,8 @@ public class JerryFishClicker : MonoBehaviour
                     // Debug.Log(clickedGameObject.name);//ゲームオブジェクトの名前を出力
                     Vector3 dir = clickedGameObject.transform.position - hit.point;
                     dir.Normalize();
+                    dir.y = 1.0f;
+                    dir.Normalize();
                     dir.z = 0.0f;
                     if ( clickedGameObject.GetComponent<Rigidbody>() != null )
                     {
