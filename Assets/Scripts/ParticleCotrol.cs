@@ -6,7 +6,9 @@ public class ParticleCotrol : MonoBehaviour
 {
     [SerializeField] float lifeTime;
     [SerializeField] Camera cam;
+    [SerializeField] bool anyClick = true;
     ParticleSystem particle;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +19,13 @@ public class ParticleCotrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if ( anyClick)
+        {
+            if ( Input.GetMouseButton(0) )
+            {
+                clicked();
+            }
+        }
     }
 
     public void clicked()
